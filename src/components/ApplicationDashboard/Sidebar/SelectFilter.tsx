@@ -10,7 +10,7 @@ const SelectFilter = (props: Props) => {
 
   return (
     <>
-      {!hide && <div className="select-overlay"></div>}
+      {!hide && <div className="select-overlay" onClick={toggleHide}></div>}
       <div className="select-filter" onClick={toggleHide}>
         <div className="role">
           <div>SIP</div>
