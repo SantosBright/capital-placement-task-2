@@ -1,0 +1,42 @@
+
+.application-dashboard .info-card {
+}
+.application-dashboard .info-card .info-details {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+.application-dashboard .info-card .info-details:nth-of-type(1) {
+  border-bottom: 1px solid #eeeeee;
+}
+.application-dashboard .info-card .icons {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #ececec;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.application-dashboard .info-card .info-details h5 {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.application-dashboard .info-card .education-location-date {
+  color: #b8b8b8;
+}
+.application-dashboard .info-card .education-location-date span {
+  margin: 0 0.5rem;
+  margin-top: 0.5rem;
+  color: #b8b8b8;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+.application-dashboard .info-card .education-location-date span:first-child {
+  color: #000;
+  font-weight: 400;
+  margin-left: 0;
+}

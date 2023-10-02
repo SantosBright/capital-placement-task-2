@@ -1,0 +1,75 @@
+.application-dashboard .question {
+  margin-top: 2rem;
+  display: flex;
+  align-items: stretch;
+}
+.application-dashboard .question .question-title {
+  padding: 1rem 0;
+  font-size: 0.875rem;
+  font-weight: 300;
+  border-top: 1px solid #eeeeee;
+}
+.application-dashboard .question .data-type {
+  flex-basis: 1.25rem;
+  height: 100%;
+  margin-right: 0.5rem;
+  padding-top: 2.75rem;
+  display: flex;
+  justify-content: center;
+}
+.application-dashboard .question .data-type > div {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  background-color: #fff3b0;
+}
+.application-dashboard .question .data-type-tag {
+  color: #f1cc04;
+  font-size: 0.625rem;
+  font-weight: 400;
+  padding: 0.12rem 0.62rem;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+  background: #fffbe4;
+  width: max-content;
+}
+.application-dashboard .question .answer-text {
+  padding: 1.5rem;
+  color: #216c84;
+  font-size: 0.75rem;
+  font-weight: 400;
+  border-radius: 1rem;
+  background: #f8faff;
+}
+.application-dashboard .question .mutiple-choices {
+  display: flex;
+  align-items: center;
+}
+.application-dashboard .question .mutiple-choices .choice-badge {
+  color: #216c84;
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  background: #f8faff;
+  margin-right: 0.5rem;
+}
+.application-dashboard .question .video {
+  width: 25rem;
+  height: 14rem;
+  position: relative;
+}
+.application-dashboard .question .video img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+.application-dashboard .question .video .overlay {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

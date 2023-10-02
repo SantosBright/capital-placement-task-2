@@ -1,0 +1,54 @@
+.application-dashboard .enrolled-other-programs {
+}
+.application-dashboard .enrolled-other-programs .programs {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eeeeee;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+.application-dashboard .enrolled-other-programs .programs:last-child {
+  border-bottom: none;
+}
+.application-dashboard .programs .icon {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #ececec;
+  display: grid;
+  place-content: center;
+}
+.application-dashboard .programs .info {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+.application-dashboard .programs .info h5 {
+  color: #0b0b0b;
+  font-size: 0.75rem;
+  font-weight: 300;
+}
+.application-dashboard .programs .info h5:first-child {
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.application-dashboard .programs .status {
+  font-size: 0.5625rem;
+  font-weight: 400;
+  padding: 0.12rem 1rem;
+  border-radius: 1rem;
+  border: 1px solid;
+}
+.application-dashboard .programs .status.active {
+  border: 1px solid #9ddc89;
+  background: #dbf5d3;
+  color: #087b2f;
+}
+.application-dashboard .programs .status.disqualified {
+  color: #fc402b;
+  border: 1px solid #fea095;
+  background: #ffecea;
+}

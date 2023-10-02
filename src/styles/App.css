@@ -1,0 +1,6 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+  overflow-y: auto;
+  background: #f9faff;
+}

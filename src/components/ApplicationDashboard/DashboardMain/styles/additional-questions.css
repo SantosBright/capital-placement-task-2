@@ -1,0 +1,18 @@
+.application-dashboard .additional-questions .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.application-dashboard .additional-questions .section-title {
+  margin-bottom: 0;
+}
+.application-dashboard .additional-questions .sort-filter {
+  color: #0b0b0b;
+  font-size: 0.875rem;
+  font-weight: 400;
+  border-radius: 0.5rem;
+  border: 1px solid #ebebeb;
+  padding: 0.12rem 1rem;
+  flex-basis: 12.5rem;
+  cursor: pointer;
+}

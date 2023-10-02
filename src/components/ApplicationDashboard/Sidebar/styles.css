@@ -1,0 +1,219 @@
+.application-dashboard .sidebar {
+  width: 27.5rem;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+.application-dashboard .sidebar::-webkit-scrollbar {
+  display: none;
+}
+.sidebar .candidate-list {
+  background-color: white;
+  padding: 0.5rem 0;
+  flex: 1;
+}
+
+/*  */
+.sidebar .qualified-tabs {
+  background-color: white;
+  margin-bottom: 0.5rem;
+  display: flex;
+  padding: 1.5rem 0;
+}
+.sidebar .qualified-tabs .checkbox-btn {
+  border-right: 2px solid #f3f3f4;
+}
+.sidebar .qualified-tabs .tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+}
+.sidebar .qualified-tabs button {
+  padding: 0 1rem;
+}
+.sidebar .qualified-tabs .single-tab:nth-child(2) {
+  border-left: 2px solid #f3f3f4;
+  border-right: 2px solid #f3f3f4;
+}
+.sidebar .single-tab .badge {
+  color: #22215b;
+  font-size: 0.625rem;
+  font-weight: 400;
+  padding: 0.06rem 0.38rem;
+  border-radius: 2.5rem;
+  background: #f7f8fd;
+  margin-left: 0.5rem;
+}
+.sidebar .qualified-tabs .single-tab.selected {
+  color: #1d4ed8;
+  transition: 0.3s ease-out;
+}
+.sidebar .qualified-tabs .single-tab.selected .badge {
+  color: #1d4ed8;
+  background-color: #edf4ff;
+}
+.sidebar .qualified-tabs .single-tab:hover {
+  color: #1d4ed8;
+  transition: 0.3s ease-out;
+}
+.sidebar .qualified-tabs .single-tab:hover .badge {
+  color: #1d4ed8;
+  transition: 0.3s ease-out;
+  background-color: #edf4ff;
+}
+
+/*  */
+.sidebar .search-filter {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.sidebar .search-filter .input-container {
+  flex: 1;
+  position: relative;
+}
+.sidebar .search-filter input {
+  background-color: white;
+  padding: 1rem 2.87rem;
+  outline: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  display: block;
+  border: 0;
+}
+.sidebar .search-filter label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  padding-right: 0.62rem;
+}
+.sidebar .search-filter .warning-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.sidebar .search-filter button {
+  padding: 0.5rem;
+  display: block;
+  background-color: white;
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 25px 0px rgba(141, 141, 141, 0.05);
+}
+
+.sidebar .select-filter {
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+  z-index: 10000;
+}
+.sidebar .select-filter .role {
+  padding: 0.5rem;
+  margin-right: 0.88rem;
+}
+.sidebar .select-filter .role > div {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #f4f7fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #384a69;
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+.sidebar .select-filter .selected-text {
+  flex: 1;
+  border-right: 2px solid #eef2ff;
+  border-left: 2px solid #eef2ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+.sidebar .select-filter .selected-text h4 {
+  color: #384a69;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.sidebar .select-filter .arrow-down {
+  padding: 0 0.5rem;
+  margin-left: 0.5rem;
+  padding-top: 0.3rem;
+}
+.sidebar .select-overlay {
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.sidebar .select-filter .select-modal {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  top: 4.5rem;
+  box-shadow: 0px 9px 23px 0px rgba(0, 0, 0, 0.05);
+  border-radius: 0 0 1rem 1rem;
+  transition: .3s ease-in-out;
+}
+.sidebar .select-filter .select-modal.hide {
+  opacity: 0;
+  pointer-events: none;
+  box-shadow: none;
+}
+.sidebar .select-filter .select-modal .modal-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #eeeeee;
+  transition: 0.3s ease-in-out;
+}
+.sidebar .select-modal .modal-option .count {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  background: #f7f8fd;
+  transition: 0.3s ease-in-out;
+}
+.sidebar .select-modal .modal-option:hover {
+  background-color: #edf4ff;
+}
+.sidebar .select-modal .modal-option:hover .count {
+  color: #1d4ed8;
+  background-color: #a4c2f4;
+}
+.sidebar .select-filter .select-modal .modal-option:last-child {
+  border-bottom: 0;
+}

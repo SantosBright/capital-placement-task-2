@@ -1,0 +1,30 @@
+.application-dashboard .resume {
+}
+.application-dashboard .resume .header {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.application-dashboard .resume .actions {
+  display: flex;
+  align-items: center;
+}
+.application-dashboard .resume .actions button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #ececec;
+  box-shadow: 0px 4px 25px 0px rgba(141, 141, 141, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.application-dashboard .resume .actions button:first-child {
+  margin-right: 0.5rem;
+}
+.application-dashboard .resume .pdf-preview {
+  border-radius: 0.25rem;
+  background: #f1f1f1;
+  height: 56.3125rem;
+}
